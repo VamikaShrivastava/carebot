@@ -8,8 +8,6 @@ import os
 
 load_dotenv()
 
-
-
 app = Flask(__name__)
 
 
@@ -222,8 +220,6 @@ def feedbackresponse():
     return str("We have successfully logged your feedback")
 
 
-
-
 def Responses(intentT,valueE):
     
     if intentT == "NewAppointment":
@@ -323,20 +319,6 @@ def Responses(intentT,valueE):
           }
             response[0]["payload"]["facebook"]["attachment"]["payload"]["elements"].append(dict1)
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
     if intentT == "ViewAppoint":
         
         response = [
@@ -388,9 +370,6 @@ def Responses(intentT,valueE):
             response[0]["payload"]["facebook"]["attachment"]["payload"]["elements"].append(dict1)
 
 
-
-
-
     if intentT == "NoIntent":
         
         response = [
@@ -427,23 +406,8 @@ def Responses(intentT,valueE):
           ]
         }
       }
-    ]
-        
-            
-
-
-
-    
-
-
-
-
-
-        
+    ]       
     return response
-        
-
-
 
 def UserBooked(userId):
     
