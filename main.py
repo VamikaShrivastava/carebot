@@ -300,7 +300,7 @@ def Responses(intentT,valueE):
         for i in mydoc:
             dict1 = {
             "title": "Dr. " + i["Name"],
-            "image_url":"https://samaritan-382010.el.r.appspot.com"+url[i["Did"]],
+            "image_url": os.getenv("BASE_URL") + url[i["Did"]],
             "subtitle":"Dr.{} has a total experience of {} in {} field. Available on weekdays and timings are {}".format(i["Name"],i["exp"],i["desc"],i["timings"]),
             
             "buttons":[
