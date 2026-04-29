@@ -121,9 +121,6 @@ def handleWebhook1():
         
         else:
             res = {"fulfillmentMessages": [{"text": {"text": ["Sorry We do not have your User Id information.Kindly enter your Unique User Id"]}}]}
-        
-        
-        
 
     elif intent == "numberUser":
         valueI = int(req["queryResult"]["parameters"]["number"])
@@ -154,10 +151,7 @@ def handleWebhook1():
             
         else:
             res = {"fulfillmentMessages": [{"text": {"text": ["You have not given the Unique User Id"]} }]} 
-
-
-
-        
+   
     else:
         responseText = f"There are no fulfillment responses defined for Intent {intent}"
 
@@ -421,10 +415,6 @@ def UserBooked(userId):
                 return i["Name"]
             
     return "No"
-
-
-
-
 
 
 if __name__ == '__main__':
