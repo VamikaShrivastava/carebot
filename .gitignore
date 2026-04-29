@@ -1,0 +1,19 @@
+# Environment variables - NEVER push these
+.env
+
+# Mac system files
+.DS_Store
+**/.DS_Store
+__MACOSX/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# VS Code settings
+.vscode/

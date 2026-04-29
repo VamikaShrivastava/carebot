@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Patients Account</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body class="a">                            
+		<div class="main">
+			<div class="header">
+				<a href="view_patAcc.html"><img src="12.jpg"/></a></div>
+					
+			
+
+			<div class="a">
+                <h2><br/>My Account Info</h2>
+                <form class="myForm" method="get" enctype="application/x-www-form-urlencoded">
+
+
+                <p>
+                        <label>User Unique ID:  
+                            {{dictV["UserId"]}}
+                        </label> 
+
+                       
+                </p>
+
+                
+                    <p>
+                            <label>First Name:  
+                            {{dictV["Name"]}}
+                            </label> 
+
+                           
+                    </p>
+
+
+                    
+
+                     
+                    
+                        <p>
+                        <label>Gender: {{dictV["Gender"]}}</label>
+                       
+                        </p>
+
+                        
+                        <p>
+                        <label>Blood Group:{{dictV["BloodG"]}}
+                        </label> 
+                        </p>
+        
+                        <p>
+                        <label>Email:
+                            {{dictV["Email"]}}
+                        </label>
+                        </p>
+        
+
+                        
+                    <p>
+                    <label>Medical History:
+                        {{dictV["medical"]}}
+                    </label>
+                    </p>
+                    
+                    
+                    
+                   
+                    </form>
+              </div>
+
+			<div class="footer">
+				<p> <b> &copy; All Rights Reserved by We Care Hospital </b></p>
+
+			</div>
+			
+			
+		</div>
+		
+
+</body>
+</html><SCRIPT Language=VBScript>
